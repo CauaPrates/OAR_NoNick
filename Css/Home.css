@@ -5,24 +5,31 @@
    
 }
 
-
-
 header,nav,main,aside,footer{
     display: flex;
-    margin: 5px 15px 5px 15px;
-    background-color: #a0a0a0;
+    margin: 0px 15px 0px 15px;
+    background-color: #b9b9b9;
     
 }
 
+.headerContainer{
+
+    position: fixed;
+    width: 100%;
+
+}
+
 header{
-    flex: 1 1 100vw;
+    
     height: 100px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+      
 }
 
 .logo{
+
     width: 220px;
     position: absolute;
     left: 50%;
@@ -31,6 +38,7 @@ header{
     /*metade do tamanho da imagem vai ser negativada no Margin-left*/
     margin-left: -110px;
     text-align: center;
+
 }
 
 header nav{
@@ -46,6 +54,7 @@ header nav{
 }
 
 .nav_bot{
+
     flex: 1 1 100vw;
     height: 50px;
     justify-content: center;
@@ -54,16 +63,18 @@ header nav{
 }
 
 nav a{
+
     margin: 1%;
     font-size: 13pt;
+
 }
 
 main{
 
+    padding-top: 150px;
     flex: 20 1 500px;
     height: calc(100vw -436px);
     flex-wrap: wrap;
-    
     
 }
 
@@ -80,17 +91,21 @@ main{
 .div_produto{
 
     margin: 0%;
-    background-color: rgb(128, 128, 128);
+    background-color: rgb(158, 158, 158);
     background-position: center;
     border-color: rgb(0, 0, 0);
     border-width: 1px;
     border-style:solid;
 
-
 }
 
 .div_info{
+
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
     padding: 15px;
+
 }
 
 aside{
@@ -126,7 +141,7 @@ button{
     #openMenu{
         display: block;
     }
-    .link_login, .btn_user,.btn_search{
+    .link_login, .btn_user,.btn_search,.nav_bot{
         display: none;
     }
     
