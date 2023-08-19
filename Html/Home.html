@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OAR_NoNick</title>
     <link rel="stylesheet" href="/Css/Home.css">
+
 </head>
 
 <body>
     <header>
-        <div>
+
+        <nav class="nav_top">
             <a href="#" class="link_login">
                 Register/Login
             </a>
@@ -27,23 +29,18 @@
                         stroke-linejoin="round" />
                 </svg>
             </button>
-        </div>
+        </nav>
 
-        
+
 
         <a href="#" id="logo">
-            <img src="/Imports/Img/noNickLogo.png" class="logo" alt="LOGO" >
+            <img src="/Imports/Img/noNickLogo.png" class="logo" alt="LOGO">
         </a>
 
-                <!---
-                    User icon
-                    Cart Icon
-                    Search Icon
-                    Heart Icon
-                -->
 
-        <div id="right_icons">
-            <nav class="nav_right">
+
+        <nav class="nav_top">
+
             <button class="btn_x" id="closeMenu">
                 <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 25 25" fill="none">
                     <path d="M2 23L12.5 12.5001M12.5 12.5001L23 2M12.5 12.5001L2 2M12.5 12.5001L23 23"
@@ -59,7 +56,8 @@
                     <path
                         d="M12.9375 14.5C16.3892 14.5 19.1875 11.7017 19.1875 8.25C19.1875 4.79822 16.3892 2 12.9375 2C9.48575 2 6.68753 4.79822 6.68753 8.25C6.68753 11.7017 9.48575 14.5 12.9375 14.5Z"
                         stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-                </svg></button>
+                </svg>
+            </button>
 
             <button class="btn_cart">
                 <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 29 29" fill="none">
@@ -96,9 +94,10 @@
                         stroke="currentColor" stroke-width="3" stroke-linejoin="round" />
                 </svg>
             </button>
-            </nav>
-        </div>
+        </nav>
+
     </header>
+
 
     <nav class="nav_bot">
         <a href="#">
@@ -113,12 +112,71 @@
 
     </nav>
 
-    <main>Main</main>
+    
+    <main>
+
+        <h2>
+            Camisetas
+        </h2>
+
+        <section class="div_produtos">
+
+            <div class="div_produto">
+                <img src="/Imports/Img/camisa.png" alt="camiseta">
+                <div class="div_info">
+                    <p>
+                        <Strong><span id="ProdName"></span></Strong>
+                    </p>
+                    <p><strong><span id="ProdPrice"></span></strong></p>
+                </div>
+            </div>
+            <div class="div_produto">
+                <img src="/Imports/Img/camisa.png" alt="camiseta">
+                <div class="div_info">
+                    <p>
+                        <Strong><span id="ProdName"></span></Strong>
+                    </p>
+                    <p><strong><span id="ProdPrice"></span></strong></p>
+                </div>
+            </div>
+            <div class="div_produto">
+                <img src="/Imports/Img/camisa.png" alt="camiseta">
+                <div class="div_info">
+                    <p>
+                        <Strong><span id="ProdName"></span></Strong>
+                    </p>
+                    <p><strong><span id="ProdPrice"></span></strong></p>
+                </div>
+            </div>
+            <div class="div_produto">
+                <img src="/Imports/Img/camisa.png" alt="camiseta">
+                <div class="div_info">
+                    <p>
+                        <Strong><span id="ProdName"></span></Strong>
+                    </p>
+                    <p><strong><span id="ProdPrice"></span></strong></p>
+                </div>
+            </div>
+            <div class="div_produto">
+                <img src="/Imports/Img/camisa.png" alt="camiseta">
+                <div class="div_info">
+                    <p>
+                        <Strong><span id="ProdName"></span></Strong>
+                    </p>
+                    <p><strong><span id="ProdPrice"></span></strong></p>
+                </div>
+            </div>
+
+
+
+        </section>
+    </main>
 
     <aside>Relacionado</aside>
 
     <footer>Footer</footer>
 
+    <script src="/JS/script.js"></script>
 </body>
 
 </html>
