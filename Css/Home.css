@@ -1,5 +1,6 @@
 :root{
     --color-light: #E9EBF8;
+    --color-dark-0:  #777777;
 }
 
 
@@ -8,11 +9,12 @@
     margin: 0%;
     padding: 0%;
     font-family: Arial, Helvetica, sans-serif;
-    scroll-behavior: smooth;
     box-sizing: border-box;
-  
+    
 }
-
+html{
+    scroll-behavior: smooth;
+}
 
 header,nav,main{
 
@@ -62,8 +64,13 @@ header nav{
 }
 
 
-#openMenu, #closeMenu{
+#openMenu, #closeMenu, #menu{
     display: none;
+}
+
+.menu{
+    position:absolute;
+    top: -100px;
 }
 
 .nav_bot{
@@ -82,6 +89,11 @@ nav a{
 
 }
 
+header svg:hover, header a:hover, .nav_bot a:hover{
+    
+    color: var(--color-dark-0);
+}
+
 main{
 
     padding-top: 150px;
@@ -98,7 +110,7 @@ main{
     background: rgb(255, 255, 255);
     display: flex;
     margin: 10px;
-    overflow-x: auto;
+    overflow-x:scroll;
     
 }
 
@@ -125,7 +137,7 @@ main{
 a{
     text-decoration: none;
     color: black;
-    background-color: transparent;
+    
     font-weight: bold;
 }
 
@@ -143,7 +155,7 @@ button{
 
 @media only screen and (max-width: 717px){
 
-    #openMenu{
+    #openMenu, #closeMenu{
         display: block;
     }
     .link_login, .btn_user,.btn_search,.nav_bot{
@@ -158,6 +170,27 @@ button{
         /*metade do tamanho da imagem vai ser negativada no Margin-left*/
         margin-left: -90px;
         text-align: center;  
+    }
+    .menu{
+
+        display: none;
+        position: absolute;
+        left: -15px;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--color-light);
+        padding-left: 25px;
+        padding-top: 30px;
+
+    }
+
+    .btm_xContainer{
+       padding-left: 3px;
+        padding-bottom: 30px;
     }
     
     
