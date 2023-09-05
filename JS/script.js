@@ -13,7 +13,7 @@ const produto = {
     ProdColor: null,
     ProdSize: null,
     ProdImage: null,
-    ProdPrice: "2,20"
+    ProdPrice: "169,90"
 
 };
 

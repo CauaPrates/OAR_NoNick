@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Kanit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Css/Register.css">
+</head>
+
+<body>
+    <main>
+
+        <div class="leftContainer">
+            <div class="logoContainer">
+                <a href="/Html/Home.html"><img src="/Imports/Img/noNickLogo2.png" class="logo" alt="NoNick"></a>
+                
+            </div>
+            
+            <div class="welcomeContainer">
+                <h2>
+                    Seja bem-vindo!!
+                </h2>
+                <p>
+                    você já tem uma conta?<br>
+                    acesse para efetuar suas compras
+                </p>
+            </div>
+
+            <div class="buttomContainer">
+                <a href="/Html/Login.html" class="aButton">
+                    <button>
+                    Entrar
+                    </button>
+                </a>
+                
+                <a href="#">
+                    Estou com problemas
+                </a>
+            </div>
+
+        </div>
+
+        <div class="rightContainer">
+            <div class="LoginTittle">
+                <h2>Faça seu registro</h2>
+                <p>Preencha seus dados</p>
+            </div>
+
+            <form id="noteForm">
+                <label for="username"></label>
+                <input type="text" placeholder="Usuário:" id="username" name="username" minlength="5" maxlength="10" required><br><br>
+                
+                <label for="e-mail"></label>
+                <input type="text" placeholder="E-mail:" id="e-mail" name="e-mail" maxlength="50" required><br><br>
+
+                <label for="password"></label>
+                <input type="password" placeholder="Senha:" id="password" name="password" minlength="8" maxlength="15" required><br><br>
+
+                
+            </form>
+            <div class="buttonRContainer">
+                <button type="button" onclick="processForm()">Cadastrar</button>
+            </div>
+            <div id="result"></div>
+
+        </div>
+
+    </main>
+   
+</body>
+
+</html>

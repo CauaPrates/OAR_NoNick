@@ -8,7 +8,7 @@
 
     margin: 0%;
     padding: 0%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Inter', sans-serif;
     box-sizing: border-box;
     
 }
@@ -22,7 +22,7 @@ header,nav,main{
     margin: 0px 15px 0px 15px;
     background-color: transparent;
     border: black;
-    border: 1px;  
+    
 
 }
 
@@ -86,7 +86,7 @@ nav a{
 
     margin: 1%;
     font-size: 13pt;
-
+    font-weight: bolder;
 }
 
 header svg:hover, header a:hover, .nav_bot a:hover{
@@ -107,42 +107,45 @@ main{
 .div_produtos{
     
     width: 100%;
-    background: rgb(255, 255, 255);
     display: flex;
-    margin: 10px;
+    margin: 0px 10px;
     overflow-x:scroll;
     
 }
 
+
+
 .div_produto{
 
     margin: 0%;
-    background-color: rgb(158, 158, 158);
     background-position: center;
-    border-color: rgb(0, 0, 0);
-    border-width: 0px;
-    border-style:solid;
-
 }
 
 .div_info{
-
+    gap: 5px;
+    margin-top: -4px;
+    background-color: #C6C6C6;
+    border: rgb(158, 158, 158) 0.5px solid;
     display: flex;
     flex-direction: column;
-    gap: 7px;
     padding: 15px;
-
 }
 
 a{
     text-decoration: none;
     color: black;
-    
     font-weight: bold;
 }
+a, svg{
+
+    transition: 500ms;
+    
+}
+
 
 main h2{
     margin: 10px;
+    
 }
 
 button{
